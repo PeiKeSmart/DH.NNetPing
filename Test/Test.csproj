@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewLife.NetPing\NewLife.NetPing.csproj" />
+    <ProjectReference Include="..\DH.NNetPing\DH.NNetPing.csproj" />
   </ItemGroup>
 
 </Project>
