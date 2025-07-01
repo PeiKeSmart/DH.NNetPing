@@ -68,7 +68,7 @@ public class NetPingDriver : DriverBase<Node, NetPingParameter>
         };
 
         var points = new List<PropertySpec>();
-        var extends = new List<PropertyExtend>();
+        //var extends = new List<PropertyExtend>();
 
         // 所有网关地址和DNS地址
         var gaddrs = new List<String>();
@@ -88,7 +88,7 @@ public class NetPingDriver : DriverBase<Node, NetPingParameter>
                     var ps = PropertySpec.Create(name, $"{item.Name}网关", "int", 0);
                     ps.DataType.Specs = new DataSpecs { Unit = "ms", UnitName = "毫秒" };
                     points.Add(ps);
-                    extends.Add(new PropertyExtend { Id = name, Address = ip });
+                    //extends.Add(new PropertyExtend { Id = name, Address = ip });
                     gaddrs.Add(ip);
                 }
             }
@@ -104,7 +104,7 @@ public class NetPingDriver : DriverBase<Node, NetPingParameter>
                     var ps = PropertySpec.Create(name, $"{item.Name}DNS", "int", 0);
                     ps.DataType.Specs = new DataSpecs { Unit = "ms", UnitName = "毫秒" };
                     points.Add(ps);
-                    extends.Add(new PropertyExtend { Id = name, Address = ip });
+                    //extends.Add(new PropertyExtend { Id = name, Address = ip });
                     daddrs.Add(ip);
                 }
             }
