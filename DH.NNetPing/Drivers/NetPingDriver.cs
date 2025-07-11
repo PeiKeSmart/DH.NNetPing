@@ -85,7 +85,7 @@ public class NetPingDriver : DriverBase<Node, NetPingParameter>
                 {
                     var name = "Gateway";
                     if (gi > 1) name += gi++;
-                    var ps = PropertySpec.Create(name, $"{item.Name}网关", "int", 0);
+                    var ps = PropertySpec.Create(name, $"{item.Name}网关", "int", 0, ip);
                     ps.DataType.Specs = new DataSpecs { Unit = "ms", UnitName = "毫秒" };
                     points.Add(ps);
                     //extends.Add(new PropertyExtend { Id = name, Address = ip });
@@ -101,7 +101,7 @@ public class NetPingDriver : DriverBase<Node, NetPingParameter>
                 {
                     var name = "Dns";
                     if (di > 1) name += di++;
-                    var ps = PropertySpec.Create(name, $"{item.Name}DNS", "int", 0);
+                    var ps = PropertySpec.Create(name, $"{item.Name}DNS", "int", 0, ip);
                     ps.DataType.Specs = new DataSpecs { Unit = "ms", UnitName = "毫秒" };
                     points.Add(ps);
                     //extends.Add(new PropertyExtend { Id = name, Address = ip });
