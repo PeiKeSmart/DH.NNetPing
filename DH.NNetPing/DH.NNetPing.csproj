@@ -4,8 +4,8 @@
     <AssemblyTitle>设备网络心跳驱动</AssemblyTitle>
     <Description>IoT驱动，通过Ping探测到目标设备的网络情况，并收集延迟数据</Description>
     <Company>湖北登灏科技有限公司</Company>
-    <Copyright>©2020-2025 湖北登灏科技有限公司</Copyright>
-    <VersionPrefix>4.15</VersionPrefix>
+    <Copyright>©2020-2026 湖北登灏科技有限公司</Copyright>
+    <VersionPrefix>4.17</VersionPrefix>
     <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
     <Version>$(VersionPrefix).$(VersionSuffix)</Version>
     <FileVersion>$(Version)</FileVersion>
